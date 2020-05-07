@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoeken in database</title>
+</head>
+<body>
+    <form method="POST">
+        <p>
+            <label for="zoekwoord">Geef <b>zoekwoord</b> voor database</label>
+            <input name="zoekwoord"> <input type="submit">
+            <hr>
+        </p>
+        <p>
+
+            {% for i in resultaten %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </p>
+    </form>
+
+</body>
+</html>
